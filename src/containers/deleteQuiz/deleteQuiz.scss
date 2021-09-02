@@ -1,0 +1,35 @@
+.quizDelete {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  width: 100%;
+  flex-grow: 1;
+  background: linear-gradient(90deg, #000 0%, #e74c3c 100%);
+
+  h1 {
+    color: #fff;
+    text-align: center;
+  }
+
+  & > div {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+
+  .quizesList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+      margin: 10px 0;
+      color: #fff;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+}

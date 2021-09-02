@@ -147,3 +147,12 @@ export function quizAnswerClick(answerId) {
 function isQuizFinished(state) {
   return state.activeQuestion + 1 === state.quiz.length;
 }
+
+export function deleteQuiz(quizId) {
+  return async (dispatch) => {
+    await axios.delete(
+      `https://react-quiz-4d12d-default-rtdb.europe-west1.firebasedatabase.app/quizes/${quizId}.json`
+    );
+    dispatch(fetchQuizes());
+  };
+}

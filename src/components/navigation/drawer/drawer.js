@@ -19,6 +19,11 @@ const links = [
     label: "Create Quiz",
     exact: false,
   },
+  {
+    to: "/quiz-delete",
+    label: "Delete Quiz",
+    exact: false,
+  },
 ];
 
 class Drawer extends React.Component {

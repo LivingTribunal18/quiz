@@ -46,6 +46,11 @@ class Drawer extends React.Component {
         label: "Logout",
         exact: false,
       });
+      links.push({
+        to: "/quiz-delete",
+        label: "Delete Quiz",
+        exact: false,
+      });
     } else {
       links.push({
         to: "/auth",

@@ -9,6 +9,7 @@ import {
 import Layout from "./hoc/layout/layout";
 import Quiz from "./containers/quiz/quiz";
 import QuizCreator from "./containers/quizCreator/quizCreator";
+import QuizDelete from "./containers/deleteQuiz/deleteQuiz";
 import QuizList from "./containers/quizList/quizList";
 import Auth from "./containers/auth/auth";
 import Logout from "./components/logout/logout";
@@ -35,6 +36,7 @@ class App extends React.Component {
       routes = (
         <Switch>
           <Route path="/quiz-creator" component={QuizCreator} />
+          <Route path="/quiz-delete" component={QuizDelete} />
           <Route path="/quiz/:questionId" component={Quiz} />
           <Route path="/logout" component={Logout} />
           <Route exact path="/" component={QuizList} />
